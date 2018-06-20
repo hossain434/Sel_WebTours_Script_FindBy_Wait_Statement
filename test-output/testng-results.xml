@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="5736" started-at="2018-06-20T05:30:10Z" finished-at="2018-06-20T05:30:16Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="5736" started-at="2018-06-20T05:30:10Z" finished-at="2018-06-20T05:30:16Z">
+      <class name="seleniunInDocker.TestRunner">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:seleniunInDocker.TestRunner@42d80b78]" name="beforeClass" is-config="true" duration-ms="3127" started-at="2018-06-19T22:30:10Z" finished-at="2018-06-19T22:30:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="LoginTest()[pri:0, instance:seleniunInDocker.TestRunner@42d80b78]" name="LoginTest" duration-ms="1428" started-at="2018-06-19T22:30:13Z" finished-at="2018-06-19T22:30:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTest -->
+        <test-method status="PASS" signature="LogoutTest()[pri:0, instance:seleniunInDocker.TestRunner@42d80b78]" name="LogoutTest" duration-ms="497" started-at="2018-06-19T22:30:15Z" finished-at="2018-06-19T22:30:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LogoutTest -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:seleniunInDocker.TestRunner@42d80b78]" name="afterClass" is-config="true" duration-ms="655" started-at="2018-06-19T22:30:15Z" finished-at="2018-06-19T22:30:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- seleniunInDocker.TestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
