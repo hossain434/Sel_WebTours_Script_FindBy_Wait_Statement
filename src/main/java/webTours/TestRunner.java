@@ -9,21 +9,22 @@ import org.testng.annotations.AfterClass;
 
 public class TestRunner {
 	private WebDriver driver;
+	LoginPage loginPage;
 
 	@BeforeClass
-	public void beforeClass() {
-		
+	public void beforeTest() {
+
 		System.setProperty("webdriver.chrome.driver", "C:\\chromedriver\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.navigate().to("http://newtours.demoaut.com/mercurywelcome.php");
+		// Initialize Login Page
+		loginPage = PageFactory.initElements(driver, LoginPage.class);
 
 	}
 
 	@Test
 	public void LoginTest() throws InterruptedException {
-		// Initialize Login Page
-	
-		LoginPage loginPage = PageFactory.initElements(driver, LoginPage.class);
+
 		// Enter user name
 		loginPage.EnterUserName("arf");
 		// Enter Password
@@ -34,14 +35,12 @@ public class TestRunner {
 
 	@Test
 	public void LogoutTest() {
-		// Initialize Login Page
-		LoginPage loginPage = PageFactory.initElements(driver, LoginPage.class);
 		// Click Logout button
 		loginPage.ClickLogoutButton();
 	}
 
 	@AfterClass
-	public void afterClass() {
+	public void afterTest() {
 		// Close the browser
 		driver.close();
 		driver.quit();
